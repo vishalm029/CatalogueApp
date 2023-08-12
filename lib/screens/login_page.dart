@@ -1,5 +1,5 @@
+import 'package:cataloug_app/utility/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -21,7 +21,7 @@ class LoginPage extends StatelessWidget {
           Text(
             "Welcome",
             style: TextStyle(
-              fontSize: 22,
+              fontSize: 28,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -57,14 +57,16 @@ class LoginPage extends StatelessWidget {
                 ) ,
                 ),
             SizedBox(
-            height: 20.0,
+            height: 40.0,
             ),
             //Login Button
             ElevatedButton(onPressed: (){
-              print("You are Logged in Successfully");
+              //print("You are Logged in Successfully");
+              Navigator.pushNamed(context, MyRoutes.homeRoute);//jab login pe click karenge to home pe aa jayenge
             }, 
             child: Text("Login"),
             style: TextButton.styleFrom(
+              minimumSize: Size(150, 40)
 
               
             ),)
