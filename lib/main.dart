@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      //initialRoute: "/home",//after reload home will open
+      initialRoute: "/home",//after reload home will open
       //routes: rasta jaise ki konsa page kholna h aapko, ye map leta h input
       routes: {
         "/" : (context) => LoginPage(),//for home routes by default
