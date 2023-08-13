@@ -1,3 +1,4 @@
+import 'package:cataloug_app/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 class HomePage extends StatelessWidget {
@@ -11,6 +12,7 @@ class HomePage extends StatelessWidget {
       return Scaffold(
         //This is a widget of the flutter and shows the name of App on the top
         appBar:AppBar(
+          
           title: Text("Catalog App"),
         ),
         //child:Center(
@@ -19,7 +21,7 @@ class HomePage extends StatelessWidget {
       child:Text("Welcome Dude $date is $name"),
     ),
     //drawer is a slide menu box on left side (by default) jo ek drawer bna dega
-    drawer:Drawer(),
+    drawer:MyDrawer(),
       );
   }
 }

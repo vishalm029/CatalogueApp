@@ -1,5 +1,8 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:cataloug_app/screens/login_page.dart';
 import 'package:cataloug_app/utility/routes.dart';
+import 'package:cataloug_app/widgets/themes.dart';
 import 'package:flutter/material.dart';
 //material library ke wajah se hi default theame blue karta h center me app ka name and drawer vagarah
 import 'package:cataloug_app/screens/home_page.dart';
@@ -18,18 +21,10 @@ class MyApp extends StatelessWidget {
       //theme mode dark or light
       themeMode: ThemeMode.light,
       //to change the colours of the theme
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple
-       // primaryTextTheme: GoogleFonts.latoTextTheme(),
-       //fontFamily: GoogleFonts.lato().fontFamily,
-       //style: GoogleFonts.lato(fontSize: 40),
-       //style: GoogleFonts.getFont('Lato'),
-      ),
+      theme: MyTheme.lightTheme(context),
       //to remove the debug option in your APP
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      darkTheme: MyTheme.lightTheme(context),
       initialRoute: "/home",//after reload home will open
       //routes: rasta jaise ki konsa page kholna h aapko, ye map leta h input
       routes: {
