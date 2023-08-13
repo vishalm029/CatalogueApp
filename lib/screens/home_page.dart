@@ -26,31 +26,38 @@ class _HomePageState extends State<HomePage> {
     loadData();
   }
   loadData() async{
-    final CatalogJson = await rootBundle.loadString("assets/files/catalog.json");
+    // ignore: non_constant_identifier_names
+    var CatalogJson = await rootBundle.loadString("assets/files/catalog.json");
     //print(CatalogJson);
     final decodedData = jsonDecode(CatalogJson);
     var productsData = decodedData("products");
+    CatalogModel.items=List.from(productsData)
+    .map<Item>((item) => item
+    .fromMap(item)).toList();
+    setState(() {
+      
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    final dummyList=List.generate(20,(index)=>CatalogModel.items[0]);
+    //final dummyList=List.generate(20,(index)=>CatalogModel.items[0]);
     //return Material(  i.e. we changed the material app to scaffold for seeing the better veiw of app i.e. battery network on the upper head
       return Scaffold(
         //This is a widget of the flutter and shows the name of App on the top
         appBar:AppBar(
           
-          title: Text("Catalog App"),
+          title: const Text("Catalog App"),
         ),
         //child:Center(
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView.builder(
-          //itemCount: CatalogModel.items.length,
-          itemCount: dummyList.length,
+          itemCount: CatalogModel.items.length,
+          //itemCount: dummyList.length,
           itemBuilder: (context,index)
           {return ItemWidget(item:
-           dummyList[index],);
+           CatalogModel.items[index],);
           }
           ),
       ),
