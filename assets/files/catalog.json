@@ -1,0 +1,98 @@
+{
+    "products":[
+        {
+        "id": 1,
+        "name": "iPhone 14 pro max",
+        "desc": "Apple i phone of best quality",
+        "price": 143897,
+        "color": "#33505a",
+        "image":""
+        },
+
+        {
+            "id": 2,
+            "name": "iPhone 14 pro max",
+            "desc": "Apple i phone of best quality",
+            "price": 143897,
+            "color": "#33505a",
+            "image":""
+            },
+
+            {
+                "id": 3,
+                "name": "iPhone 14 pro max",
+                "desc": "Apple i phone of best quality",
+                "price": 143897,
+                "color": "#33505a",
+                "image":""
+                },
+
+                {
+                    "id": 4,
+                    "name": "iPhone 14 pro max",
+                    "desc": "Apple i phone of best quality",
+                    "price": 143897,
+                    "color": "#33505a",
+                    "image":""
+                    },
+
+                    {
+                        "id": 5,
+                        "name": "iPhone 14 pro max",
+                        "desc": "Apple i phone of best quality",
+                        "price": 143897,
+                        "color": "#33505a",
+                        "image":""
+                        },
+
+                        {
+                            "id": 6,
+                            "name": "iPhone 14 pro max",
+                            "desc": "Apple i phone of best quality",
+                            "price": 143897,
+                            "color": "#33505a",
+                            "image":""
+                            },
+
+                            {
+                                "id": 7,
+                                "name": "iPhone 14 pro max",
+                                "desc": "Apple i phone of best quality",
+                                "price": 143897,
+                                "color": "#33505a",
+                                "image":""
+                                },
+
+                                {
+                                    "id": 8,
+                                    "name": "iPhone 14 pro max",
+                                    "desc": "Apple i phone of best quality",
+                                    "price": 143897,
+                                    "color": "#33505a",
+                                    "image":""
+                                    },
+
+
+                                    {
+                                        "id": 9,
+                                        "name": "iPhone 14 pro max",
+                                        "desc": "Apple i phone of best quality",
+                                        "price": 143897,
+                                        "color": "#33505a",
+                                        "image":""
+                                        },
+
+
+                                        {
+                                            "id": 10,
+                                            "name": "iPhone 14 pro max",
+                                            "desc": "Apple i phone of best quality",
+                                            "price": 143897,
+                                            "color": "#33505a",
+                                            "image":""
+                                            }
+
+
+        
+    ]
+}
