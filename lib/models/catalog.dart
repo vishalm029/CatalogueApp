@@ -4,13 +4,26 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 
 class CatalogModel{
-  static List<Item> items =[Item(
+  static List<Item> items =[Item
+  (
   id: 1,
   name: "iPhone 14 pro max",
   desc: "Apple i phone of best quality",
   price:143897,
   color: "#33505a",
   image:"https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?",
+
+
+),
+];
+
+final products=[Item(
+  id: 2,
+  name: "iPhone pro max",
+  desc: "Apple i phone of best quality",
+  price: 143897,
+  color: "#33505a",
+  image:"https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg",
 
 
 )
@@ -115,7 +128,7 @@ class Item {
 
 
 // final products=[Item(
-//   id: 1,
+//   id: 2,
 //   name: "iPhone pro max",
 //   desc: "Apple i phone of best quality",
 //   price: 143897,
@@ -124,4 +137,4 @@ class Item {
 
 
 // )
-//];
+// ];

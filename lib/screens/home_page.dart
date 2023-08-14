@@ -30,7 +30,9 @@ class _HomePageState extends State<HomePage> {
     var CatalogJson = await rootBundle.loadString("assets/files/catalog.json");
     //print(CatalogJson);
     final decodedData = jsonDecode(CatalogJson);
-    var productsData = decodedData("products");
+   // print(decodedData);
+    var productsData = decodedData["products"];
+   // print(productsData);
     CatalogModel.items=List.from(productsData)
     .map<Item>((item) => item
     .fromMap(item)).toList();
@@ -41,8 +43,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    //final dummyList=List.generate(20,(index)=>CatalogModel.items[0]);
-    //return Material(  i.e. we changed the material app to scaffold for seeing the better veiw of app i.e. battery network on the upper head
+    //final dummyList=List.generate(2,(index)=>CatalogModel.items[0]);
+    //return Material
+    //(  i.e. we changed the material app to scaffold for seeing the better veiw of app i.e. battery network on the upper head
       return Scaffold(
         //This is a widget of the flutter and shows the name of App on the top
         appBar:AppBar(
@@ -52,13 +55,16 @@ class _HomePageState extends State<HomePage> {
         //child:Center(
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: ListView.builder(
-          itemCount: CatalogModel.items.length,
+        child: (CatalogModel.items!=null && CatalogModel.items.isNotEmpty)?
+         ListView.builder(
+         itemCount: CatalogModel.items.length,
           //itemCount: dummyList.length,
           itemBuilder: (context,index)
           {return ItemWidget(item:
            CatalogModel.items[index],);
           }
+          ):Center(
+            child: CircularProgressIndicator(),
           ),
       ),
     //   :Center(
